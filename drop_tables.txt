@@ -1,0 +1,8 @@
+drop table if exists food_combos;
+drop table if exists order_employee;
+drop table if exists order_items;
+drop table if exists orders;
+drop table if exists customer_address;
+drop table if exists food_item;
+drop table if exists Employee;
+drop table if exists Customer;

@@ -1,0 +1,43 @@
+{% extends "header_employee.html" %}
+{% block content %}
+
+{% load static %}
+{% if data %}
+<h3 align="center">{{data}}<h3>
+{% endif %}
+
+<div class="">
+    <b><h1>EMPLOYEE&ensp;PROFILE&ensp;DETAILS</h1></b>
+    <hr></hr>
+    {% if data %}
+        <h6 align="center" class="text-danger">{{data}}<h3>
+    {% endif %}
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-5 form-signin">
+            <form action="{% url 'users:edit_details_employee' %}" method="post">
+                {% csrf_token %}
+                <div class="form-floating">
+                    <h5 for="floatingInput">Name</h5>
+                    <input class="form-control" name="name" id="floatingInput" value="{{employee.name}}">
+                </div>
+                <br>
+                <div class="form-floating">
+                    <h5 for="floatingInput">Position</h5>
+                    <input class="form-control" name="position" id="floatingInput" value="{{employee.position}}" disabled>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <h5 for="floatingInput">Salary</h5>
+                    <input class="form-control" name="phone" id="floatingInput" value="{{employee.salary}}" disabled>
+                </div>
+                <br>
+                <br><br>
+                <button class="btn btn-dark btn-lg" type="submit">Save</button>
+            </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+{% endblock content %}
