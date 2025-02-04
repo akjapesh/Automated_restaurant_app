@@ -1,10 +1,9 @@
 # Restaurant Automation system
-## DBMS 2020 - 2021
-# Group Members
-18CS10002 - Akshat Shukla
-18CS10021 - Hardik Aggarwal
-18CS10034 - Naman Jain
+## DBMS 
 
+- A full-stack website and Android application for renting and selling bicycles using SQLite.
+- This uses industrial development techniques such as SRS, DFD, and UML for structured software design.
+- The database uses the Entity-Relationship Model with a relational database schema.
 
 ## Instructions To build
 
